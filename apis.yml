@@ -1,7 +1,26 @@
 aid: est
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/est.png
 name: EST
-description: EST is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  EST (EST Media) is a Los Angeles-based media holding company founded by Jaeson Ma and Eric Tu that
+  amplifies Asian stories and talent for global audiences. It operates three divisions: EST Studios,
+  which develops, finances, produces, and sells Asian film and television projects; Eastern Standard
+  Times, a Gen Z digital video platform sharing untold stories from Asia and its diaspora; and
+  Established, a content studio partnering with global brands on advertising campaigns, influencer
+  collaborations, commercials, and experiential events. EST Media is a 500 Global portfolio company.
+  It publishes no public API or developer platform; this profile carries company identity and a
+  domain-security probe only.
 url: https://raw.githubusercontent.com/api-evangelist/est/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Media
+- Entertainment
+- Film
+- Television
+- Digital Media
+- Content
+- Asia
+- Brand Marketing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/est-domain-security.yml
 - type: Website
   url: https://estmedia.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
