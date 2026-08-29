@@ -33,6 +33,9 @@ description: >-
   It publishes no public API or developer platform; this profile carries company identity and a
   domain-security probe only.
 url: https://raw.githubusercontent.com/api-evangelist/est/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "It publishes no public API or developer platform; this profile carries company identity and a domain-security probe only."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
